@@ -1,0 +1,6 @@
+#! /usr/bin/bash
+# See on kommentaar
+
+ls
+pwd
+whoami
