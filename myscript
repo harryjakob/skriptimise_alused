@@ -2,5 +2,7 @@
 # See on kommentaar
 
 ls
+echo "The current dir is:"
 pwd
+echo "I am logged in as:"
 whoami
