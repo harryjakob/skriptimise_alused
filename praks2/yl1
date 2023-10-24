@@ -1,0 +1,5 @@
+#!/bin/bash
+
+#Väljastab kasutajale tervitusi
+
+echo "Tere, $(whoami)!"
