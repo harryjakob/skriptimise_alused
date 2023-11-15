@@ -1,0 +1,8 @@
+#/!bin/bash
+
+# Skript väljastab kasutajale kuupäeva ja kellaaja
+
+current_date_time=$(date)
+echo "Hetkene kuupäev ja kellaaeg on: $current_date_time"
+echo "Selle kuu kalender:"
+cal
