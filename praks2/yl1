@@ -2,4 +2,4 @@
 
 #Väljastab kasutajale tervitusi
 
-echo "Tere, $(whoami)!"
+echo -e "Tere, $(whoami)\n!"
