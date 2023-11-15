@@ -1,0 +1,5 @@
+#!/bin/bash
+# Küsib kasutajalt ees ja perekonnanime, ning tervitab kasutajat nende nimega
+echo -n "Sisesta oma ees- ja perekonnanimi:"
+read eesnimi perekonnanimi
+echo "Meeldiv tutvuda $eesnimi $perekonnanimi !"
