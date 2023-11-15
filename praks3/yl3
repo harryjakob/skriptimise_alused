@@ -1,0 +1,12 @@
+#!bin/bash
+
+echo "Sisestage ainepunktide arv:"
+read ainepunktid
+echo "Sisestage nädalate arv:"
+read nadalad
+
+aeg=$(($ainepunktid*26))
+ajakulu_nadalas_ymar=$ printf "%.0f" $(echo "scale=2;$aeg/$nadalad" | bc)
+#ajakulu_ymar=printf "%.0f" $ajakulu_nadalas
+echo $ajakulu_nadalas_ymar
+
