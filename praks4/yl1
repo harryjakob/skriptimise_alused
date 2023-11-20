@@ -1,0 +1,13 @@
+#!/bin/bash
+
+
+
+echo "Sisesta täisarv"
+read arv
+jaak=$(($arv % 2))
+if [ $jaak -eq 1 ]
+then
+	echo "$arv on paaritu"
+else
+	echo "$arv on paaris"
+fi
