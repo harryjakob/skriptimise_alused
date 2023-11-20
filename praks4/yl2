@@ -1,0 +1,15 @@
+#!/bin/bash
+
+echo "Mitu reisjat on bussis: "
+read  reisjad
+echo "Mis on kohtade arv bussis: " 
+read  kohad
+bussid=`echo "scale=0;$reisjad / $kohad" | bc`
+mahajaanud=`echo "scale=0;$reisjad % $kohad" | bc`
+if [ $mahajaanud -gt 0 ]
+
+then
+	bussid=$(($bussid+1))
+fi
+echo "Busse täidetud: $bussid"
+echo "Maha jäänuid: 0"
