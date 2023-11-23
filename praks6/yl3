@@ -1,0 +1,21 @@
+#!/bin/bash
+
+echo "Sisesta kuu number:"
+read kuu
+case $kuu in
+	1) kuu_tekst="Jaanuar";;
+        2) kuu_tekst="Veebruar";;
+        3) kuu_tekst="Märts";;
+        4) kuu_tekst="Aprill";;
+        5) kuu_tekst="Mai";;
+        6) kuu_tekst="Juuni";;
+        7) kuu_tekst="Juuli";;
+        8) kuu_tekst="August";;
+        9) kuu_tekst="September";;
+        10) kuu_tekst="Oktoober";;
+        11) kuu_tekst="November";;
+        12) kuu_tekst="Detsember";;
+        *) echo "Ebakorrektne kuu number"; exit 1;;
+esac
+
+echo "Vastava kuu nimi on: $kuu_tekst"
