@@ -1,0 +1,14 @@
+#!/bin/bash
+
+if [ -z "$1" ] ; then
+	echo "Käivita see skript koos arvuga mille paarsust soovid kontrollida. Näiteks ./paarsus 3"
+else
+	jaak=$(($1 % 2))
+
+	if [ $jaak -eq 1 ]
+	then
+		echo "$1 on paaritu"
+	else
+		echo "$1 on paaris"
+	fi
+fi
