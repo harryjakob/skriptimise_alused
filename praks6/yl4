@@ -1,0 +1,20 @@
+#!bin/bash
+
+read -p "Sisesta number: " number
+
+if [ $number -lt 2 ]; then
+	echo "$number ei ole algarv."
+else 
+	on_prime=true
+	for (( i=2; i*i<=$number; i++ )); do
+		if [ $((number % i)) -eq 0 ]; then
+			on_prime=false
+			break
+		fi
+	done
+	if [ $on_prime  == true ]; then
+		echo "$number on algarv."
+	else 
+		echo "$number ei ole algarv."
+	fi
+fi
